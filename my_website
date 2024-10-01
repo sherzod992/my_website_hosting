@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mypage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mypage</title>
+    <style>
+         /* Reset basic styling */
+ body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: #333;
+}
+
+/* Container with background image */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./D7E436CC-F9F6-428A-9A7E-DF8AB45EA322.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Overlay to darken the background and make text more readable */
+.overlay {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Info section with centered content */
+.info {
+    position: left;
+    z-index: 2;
+    color: rgb(181, 177, 177);
+    max-width: 300px;
+    padding: 30px;
+    text-align: left;
+    background-color: rgba(255, 207, 207, 0.7);
+    border-radius: 10px;
+    margin-left: -60%;
+    top: 20px;
+}
+
+/* Styling for the name */
+.info h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+/* Styling for role and location */
+.info .role, .info .location {
+    font-size: 1.5rem;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+/* Paragraph text */
+.info p {
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-top: 15px;
+    line-height: 1.8;
+}
+
+/* Icon styling */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons {
+    display: flex; /* Flexbox 사용 */
+    justify-content: center; /* 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 (필요시) */
+}
+
+.social-icons i {
+    font-size: 2rem; /* Increase icon size */
+    margin: 0 10px; /* Spacing between icons */
+    color: #ddd; /* Icon color */
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .info h1 {
+        font-size: 2rem;
+    }
+
+    .info .role, .info .location {
+        font-size: 1.2rem;
+    }
+
+    .info p {
+        font-size: 1rem;
+    }
+}
+    </style>
+</head>
+<body>
+     <div class="container">
+        <div class="overlay"></div>
+        <div class="info">
+            <h1 class="name">Sherzodbek</h1>
+            <span class="role">AI Software Engineer</span><br>
+            <span class="location">Seoul, South Korea</span>
+            <p class="matin">
+                I studied Korean at a Korean language institute in Korea from 2018 to 2020.
+            </p>
+            <p>
+                From 2020 to 2024, I studied Global Software at <a href="https://www.sunmoon.ac.kr" target="_blank" style="color: #ddd; text-decoration: underline;">
+                    Sun Moon University
+                </a> in Korea.
+            </p>
+            <p>
+                I am currently doing a lot of self-study.
+            </p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/sharobiddinov.sherzod?igsh=dXp5dGJiMmpkYWM5&utm_source=qr" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-meta"></i></a>
+                <a href="https://t.me/sherzodbekll" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
